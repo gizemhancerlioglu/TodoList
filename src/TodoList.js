@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 function TodoList() {
+	const [itemsCount, setItemsCount]= useState(0);
+
 	return (
 		<>
 			<section class="todoapp">
@@ -42,7 +46,7 @@ function TodoList() {
 				<footer class="footer">
 
 					<span class="todo-count">
-						<strong>2</strong>
+						<strong>{itemsCount} </strong>
 						items left
 					</span>
 
